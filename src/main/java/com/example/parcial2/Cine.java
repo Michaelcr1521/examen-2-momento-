@@ -1,4 +1,6 @@
 package com.example.parcial2;
+import jakarta.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "cines")

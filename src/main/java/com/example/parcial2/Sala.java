@@ -1,5 +1,5 @@
 package com.example.parcial2;
-
+import jakarta.persistence.*;
 @Entity
 @Table(name = "salas")
 public class Sala {
