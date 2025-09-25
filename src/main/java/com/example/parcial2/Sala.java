@@ -1,5 +1,7 @@
 package com.example.parcial2;
+import com.example.parcial2.ayuda.Tiposala;
 import jakarta.persistence.*;
+
 @Entity
 @Table(name = "salas")
 public class Sala {
@@ -10,7 +12,7 @@ public class Sala {
 
     private String nombre;
     private Integer capacidad;
-    private String tipo; // 2D, 3D, IMAX...
+    private Tiposala tipo; // 2D, 3D, IMAX...
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "cine_id", nullable = false)
