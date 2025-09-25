@@ -12,7 +12,9 @@ public class Sala {
 
     private String nombre;
     private Integer capacidad;
-    private Tiposala tipo; // 2D, 3D, IMAX...
+
+    @Enumerated(EnumType.STRING)
+    private Tiposala tipo;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "cine_id", nullable = false)
